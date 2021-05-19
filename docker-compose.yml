@@ -1,0 +1,28 @@
+version: "3"
+services:
+  onair:
+    build:
+      context: ./
+      dockerfile: .docker/dev.Dockerfile
+    container_name: onair
+    depends_on:
+      - onair-pg
+    env_file: .env/dev.env
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./:/app
+  onair-pg:
+    image: postgres:latest
+    container_name: onair-pg
+    hostname: "onair-pg"
+    restart: always
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data/db-files/
+    ports:
+      - "5432:5432"
+    env_file: .env/dev.env
+
+volumes:
+  postgres:
+  goserverdev:
