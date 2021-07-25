@@ -1,11 +1,6 @@
 # ON AIR!
 fiber-air-docker development environment boilerplate
 
-## TODO
-- on air 세션 준비
-- fiber 유저 준비
-- gorm 외래키 준비 
-
 ![](static/ONAIR.png)
 
 아키텍쳐 참고  
