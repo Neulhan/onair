@@ -3,16 +3,6 @@ fiber-air-docker development environment boilerplate
 
 ![](static/ONAIR.png)
 
-아키텍쳐 참고  
-https://blog.puppyloper.com/menus/Golang/articles/Golang%EA%B3%BC%20Clean%20Architecture
-
-- Handler
-  - web framework 를 통해 request 가 직접 도달하는 layer
-- UseCase
-  - Handler 에서 실행되는 비즈니스 로직 layer
-- Repository
-  - UseCase 에서 실행되는 layer (DB, 등 기타 외부와의 연결)
-
 
 ## Run Project Development
 ```bash
